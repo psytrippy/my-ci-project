@@ -21,12 +21,10 @@ jobs:
         with:
           node-version: '20'
 
-      # ИСПРАВЛЕНИЕ: Добавляем working-directory
+      # УДАЛЕНО: working-directory: my-ci-project
       - name: Установка зависимостей
         run: npm install
-        working-directory: my-ci-project # <-- ДОБАВЛЕНО ЭТО!
 
-      # ИСПРАВЛЕНИЕ: Добавляем working-directory
+      # УДАЛЕНО: working-directory: my-ci-project
       - name: Запуск автоматических тестов
         run: npm test
-        working-directory: my-ci-project # <-- ДОБАВЛЕНО ЭТО!
