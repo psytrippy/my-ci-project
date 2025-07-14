@@ -21,11 +21,10 @@ jobs:
         with:
           node-version: '20'
 
-      # Убедись, что эти строки присутствуют и отступы правильные!
+      # УДАЛИ ЭТУ СТРОКУ: working-directory: my-ci-project
       - name: Установка зависимостей
         run: npm install
-        working-directory: my-ci-project # <-- ЭТА СТРОКА ВАЖНА!
 
+      # УДАЛИ ЭТУ СТРОКУ: working-directory: my-ci-project
       - name: Запуск автоматических тестов
         run: npm test
-        working-directory: my-ci-project # <-- И ЭТА СТРОКА ВАЖНА!
