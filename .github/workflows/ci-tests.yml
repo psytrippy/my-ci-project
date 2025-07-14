@@ -21,10 +21,9 @@ jobs:
         with:
           node-version: '20'
 
-      # УДАЛИ ЭТУ СТРОКУ: working-directory: my-ci-project
       - name: Установка зависимостей
         run: npm install
 
-      # УДАЛИ ЭТУ СТРОКУ: working-directory: my-ci-project
+      # ИСПРАВЛЕНИЕ: Изменяем 'run: npm test' на 'run: npx jest'
       - name: Запуск автоматических тестов
-        run: npm test
+        run: npx jest # <-- ИЗМЕНЕНО!
